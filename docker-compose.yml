@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  archchallenge.servicea:
+    image: archchallenge.servicea
+    build:
+      context: ./ArchChallenge.ServiceA
+      dockerfile: Dockerfile
+
+  archchallenge.serviceb:
+    image: archchallenge.serviceb
+    build:
+      context: ./ArchChallenge.ServiceB
+      dockerfile: Dockerfile
