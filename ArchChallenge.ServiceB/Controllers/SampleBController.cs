@@ -4,18 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ArchChallenge.Infra.Core.ServiceInterceptor;
 
 namespace ArchChallenge.ServiceB.Controllers
 {
     [Route("api/[controller]")]
-    public class SampleBController : Controller
+    public class SampleBController : BaseController
     {
-        /*
         public SampleBController(ILogger<SampleBController> logger) : base(logger)
         {
-
         }
-        */
+
         [HttpGet]
         public IEnumerable<string> Get()
         {
